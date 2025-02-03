@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jus Buah Alpukat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="alpuket.png" alt="Salad Buah Premium">
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="product-info">
+            <p class="category">Menu Jus Buah</p>
+            <h2 class="product-title">Jus Buah Alpukat</h2>
+            <p class="price" id="price">Rp 35.000</p>
+            <p class="description">
+                Manfaat Buah Alpukat untuk Tubuh.Alpukat Dapat Membantu Menjaga Berat Badan,Menjaga Kesehatan jantung,Mencegah Risiko Terjadinya Kanker,Mencegah Radang Sendi,Mencegah osteoporosis,Serta Menjaga Kesehatan Mata.Alpukat Memiliki kandungan nutrisi dan vitamin yang terdapat dalam 201 gram.
+            </p>
+            <div class="size-selector">
+                <p>Pilih Ukuran:</p>
+                <div class="sizes">
+                    <button class="size-btn" data-price="35000">Kecil</button>
+                    <button class="size-btn active" data-price="50000">Sedang</button>
+                    <button class="size-btn" data-price="65000">Besar</button>
+                </div>
+            </div>
+            <div class="quantity-selector">
+        <p>Masukkan Jumlah:</p>
+        <input type="number" id="quantity" value="1" min="1">
+    </div>
+    <p>Total Harga: <span id="total-price">Rp 35.000</span></p>
+    <button class="add-to-cart">Pesan Sekarang</button>
+</div>
+
+        </div>
+    </div>
+    <script src="naga.js"></script>
+</body>
+</html>

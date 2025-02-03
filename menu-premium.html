@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Buah Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="salad_prem.png" alt="Salad Buah Premium">
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="product-info">
+            <p class="category">Menu Salad Buah</p>
+            <h2 class="product-title">Salad Buah Premium</h2>
+            <p class="price" id="price">Rp 35.000</p>
+            <p class="description">
+                Salad buah premium kami hadir dengan tambahan topping seperti keju parut dan potongan almond, memberikan rasa yang lebih kaya dan tekstur yang nikmat.
+            </p>
+            <div class="size-selector">
+                <p>Pilih Ukuran:</p>
+                <div class="sizes">
+                    <button class="size-btn" data-price="30000">Kecil</button>
+                    <button class="size-btn active" data-price="35000">Sedang</button>
+                    <button class="size-btn" data-price="40000">Besar</button>
+                </div>
+            </div>
+            <div class="quantity-selector">
+        <p>Masukkan Jumlah:</p>
+        <input type="number" id="quantity" value="1" min="1">
+    </div>
+    <p>Total Harga: <span id="total-price">Rp 35.000</span></p>
+    <button class="add-to-cart">Pesan Sekarang</button>
+</div>
+
+        </div>
+    </div>
+    <script src="script-premium.js"></script>
+</body>
+</html>

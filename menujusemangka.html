@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jus Buah Semangka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="semangka.jpg" alt="Jus Buah Premium">
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="product-info">
+            <p class="category">Menu Jus Buah</p>
+            <h2 class="product-title">Jus Buah Semangka</h2>
+            <p class="price" id="price">Rp 40.590</p>
+            <p class="description">
+                Semangka (Citrulus Lanatus) Memiliki Banyak Manfaat Untuk Kesehatan Karena Kandungannya Yang Kaya Akan Nutrisi.Semangka Mengandung Banyak Air Dan Serat Yang Membantu Menjaga Hidrasi Dan Pencernaan Yang Sehat.Selain Itu,Semangka Juga Mengadung Antioksidan Dan Likupen Yang Bermanfaat Untuk Menjaga Kesehatan Jantung Dan Kulit.
+            <div class="size-selector">
+                <p>Pilih Ukuran:</p>
+                <div class="sizes">
+                    <button class="size-btn" data-price="40590">Kecil</button>
+                    <button class="size-btn active" data-price="47630">Sedang</button>
+                    <button class="size-btn" data-price="55660">Besar</button>
+                </div>
+            </div>
+            <div class="quantity-selector">
+        <p>Masukkan Jumlah:</p>
+        <input type="number" id="quantity" value="1" min="1">
+    </div>
+    <p>Total Harga: <span id="total-price">Rp 40.590</span></p>
+    <button class="add-to-cart">Pesan Sekarang</button>
+</div>
+
+        </div>
+    </div>
+    <script src="naga.js"></script>
+</body>
+</html>

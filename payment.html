@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembayaran</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Halaman Pembayaran</h1>
+        <p id="order-details"></p>
+        <form id="payment-form">
+            <label for="name">Nama Anda:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Alamat Rumah:</label>
+            <textarea id="address" name="address" rows="3" required placeholder="Masukkan alamat pengiriman lengkap Anda"></textarea>
+
+            <label for="payment-method">Metode Pembayaran:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="bank-transfer">Transfer Bank</option>
+                <option value="gopay">GoPay</option>
+                <option value="ovo">OVO</option>
+                <option value="dana">DANA</option>
+            </select>
+
+            <button  onclick="window.location.href='berhasil.html'">Simulasi Berhasil</button></p>
+            <button type="button" id="simulate-failure">Simulasi Gagal</button>
+        </form>
+
+        <div id="payment-status" style="display: none;">
+            <h2 id="status-message"></h2>
+            <button id="cancel-order">Batalkan Pesanan</button>
+        </div>
+
+        <div id="refund-status" style="display: none;">
+            <h2 id="refund-message"></h2>
+        </div>
+
+        <div id="back-to-home-container" style="display: none; text-align: center;">
+            <button id="back-to-home" class="back-btn">Kembali ke Beranda</button>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,1067 @@
+@font-face {
+    font-family: 'Roboto'; /* Nama font sesuai dengan yang Anda inginkan */
+    src: url('font.otf') format('truetype'); /* Path ke file ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'london'; /* Nama font sesuai dengan yang Anda inginkan */
+    src: url('OldLondon.ttf') format('truetype'); /* Path ke file ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas'; /* Nama font sesuai dengan yang Anda inginkan */
+    src: url('Bebas-Regular.ttf') format('truetype'); /* Path ke file ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /* Changed to white for consistency */
+    color: #333;
+    animation: fadeIn 2s forwards; /* Fade-in effect */
+}
+/* Fade-in animation for the whole page */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    background-image: url('bgbuah.jpg')
+    ; /* Background image for header */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Welcome Section */
+#welcome-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#welcome-content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#welcome-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#welcome-content .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #A2DFF7;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+#welcome-content .btn:hover {
+    background-color: #A2DFF7;
+}
+
+/* Menu Section */
+#menu {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+animation: slideIn 2s forwards; /* Fade-in effect */
+}
+
+#menu h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    border-image:fill 0 linear-gradient(#0001,#A2DFF7);
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+/* Untuk Menu Container */
+.menu-container {
+    width: 95%;
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    gap: 15px;
+    white-space: nowrap; /* Konten tidak membungkus ke baris baru */
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* Untuk browser modern */
+}
+
+/* Scrollbar Styling (Opsional) */
+.menu-container::-webkit-scrollbar {
+    height: 8px; /* Tinggi scrollbar */
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Warna scrollbar */
+    border-radius: 4px;
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Warna scrollbar saat hover */
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+}
+.menu-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #A2DFF7;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-family:'bebas';
+    font-size: 1.1rem;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.menu-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A2DFF7;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.menu-item .btn:hover {
+    background-color: #A2DFF7;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+/* Menu Section */
+#menu2 {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+animation: slideIn 2s forwards; /* Fade-in effect */
+}
+
+#menu2 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-item2 {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+/* Untuk Menu Container */
+.menu-container2 {
+    width: 95%;
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    gap: 15px;
+    white-space: nowrap; /* Konten tidak membungkus ke baris baru */
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* Untuk browser modern */
+}
+
+/* Scrollbar Styling (Opsional) */
+.menu-container2::-webkit-scrollbar {
+    height: 8px; /* Tinggi scrollbar */
+}
+
+.menu-container2::-webkit-scrollbar-thumb {
+    background: #ccc; /* Warna scrollbar */
+    border-radius: 4px;
+}
+
+.menu-container2::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Warna scrollbar saat hover */
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+}
+.menu-item2 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #A2DFF7;
+    margin-bottom: 10px;
+}
+
+.menu-item2 p {
+    font-family:'bebas';
+    font-size: 1.1rem;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.menu-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #090;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.menu-item .btn:hover {
+    background-color: #A2DFF7;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+/* Section slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Add slide-in effect to each section */
+.hero, .about, .contact {
+    opacity: 0; /* Initially hidden for slide-in effect */
+    animation: none;
+    transition: opacity 1s ease-out;
+}
+
+.hero.visible, .about.visible, .contact.visible {
+    animation: slideIn 1s forwards;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #A2DFF7;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Animations */
+.text-animation {
+    display: inline-block;
+    animation: typing 6s steps(30, end) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.text-animation1 {
+    display: inline-block;
+    animation: typing 4s steps(40, end) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A2DFF7;
+    padding: 1rem 2rem;
+}
+
+.nav-brand {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:'Roboto';
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    font-family: 'bebas';
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fdd835;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: linear-gradient(145deg, #A2DFF7, #ffffff); /* Latar belakang gradasi */
+    padding: 5rem 2rem;
+    
+}
+.hero p1 {
+  font-family: 'bebas', cursive;
+    font-size: 30px;
+    color: #000;}
+  
+    
+    .hero h2 {
+  font-family: 'Roboto', cursive;
+    font-size: 58px;
+    margin-bottom: 15px;
+    color: #000;}
+
+.hero .highlight {
+    color: #fdd835;
+}
+
+.hero /* From Uiverse.io by Spacious74 */ 
+button {
+  font-family: 'bebas';
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 26px;
+  border: none;
+  padding: 2px;
+  background: radial-gradient(circle 80px at 80% -10%, #ffffff, #A2DFF7);
+  position: relative;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  border-radius: 120px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 20px #ffffff38;
+  z-index: -1;
+}
+
+.blob1 {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    #ffffff,
+    #ffffff,
+    transparent
+  );
+  box-shadow: -10px 10px 30px #0051ff2d;
+}
+
+.inner {
+  padding: 14px 25px;
+  border-radius: 14px;
+  color: #000;
+  z-index: 3;
+  position: relative;
+  background: radial-gradient(circle 80px at 80% -50%, #ffffff, #A2DFF7);
+}
+.inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    #00e1ff1a,
+    transparent
+  );
+  position: absolute;
+}
+
+
+.hero button:hover {
+    background-color: #fdd835;
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Roboto';
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    background-color: #A2DFF7;
+    border: none;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #fdd835;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%; /* Stack items vertically on smaller screens */
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .product-card {
+        flex-direction: column;
+    }
+}
+
+/* General Styles */
+
+/* Product Card */
+.product-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    max-height: 900px;
+    overflow: hidden;
+animation: slideIn 2s forwards; /* Fade-in effect */
+}
+/* Fade-in animation for the whole page */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-image {
+    flex: 1;
+    position: relative;
+    background-color: #A2DFF7;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #A2DFF7;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    font-family:'bebas';
+    color: #A2DFF7;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-family: 'Roboto';
+    font-size: 1.8em;
+    margin: 0;
+}
+
+
+.price {
+    font-family:'bebas';
+    color: Green ;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.size-selector {
+  font-family:'bebas';
+    margin-bottom: 20px;
+}
+
+.size-selector p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+
+.sizes button {
+  font-family:'bebas';
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sizes button.active,
+.sizes button:hover {
+    background-color: #A2DFF7;
+    color: #fff;
+    border-color: #A2DFF7;
+}
+
+.add-to-cart {
+    background-color: #A2DFF7;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #A2DFF7;}
+
+.quantity-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.quantity-selector p {
+    font-family:'bebas' ;
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.quantity-selector input[type="number"] {
+   font-family:'bebas';
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.quantity-selector input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#total-price {
+    font-family:'bebas';
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+/* Styling for the contact section */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the contact links container */
+.contact-links {
+    margin-top: 20px;
+}
+
+/* Styling for each social media button */
+.social-button {
+    display: inline-block;
+    margin: 10px;
+    width: 50px;  /* Adjust width */
+    height: 50px; /* Adjust height */
+}
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #A2DFF7;
+  color: #fff;
+}
+
+/* Container utama untuk teks dan profil */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto; /* Memberikan jarak ke bawah */
+    padding: 30px;
+    width: 85%;
+    border: 2px solidlinear-gradient(135deg, #f1f1f1, #A2DFF7);; /* Bingkai untuk keseluruhan */
+    border-radius: 20px; /* Bingkai melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan */
+    background: linear-gradient(145deg, #A2DFF7, #ffffff); /* Latar belakang gradasi */
+}
+/* Gaya teks di kiri */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    margin-right: 30px; /* Jarak antara teks dan gambar */
+}
+
+.text-container h1 {
+      font-family: 'Roboto', cursive;
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.text-container p {
+  font-family: 'bebas', cursive;
+    font-size: 30px;
+    margin: 12px 0;
+    color: #000;  
+    line-height: 1.6;
+}
+
+/* Gaya profil di kanan */
+.profile-container {
+    flex: 0 0 35%; /* Ukuran tetap untuk gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Animasi untuk memutar */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%; /* Membuat gambar bulat */
+        animation: rotate 5s linear infinite;
+    border: 5px solid #ddd; /* Bingkai gambar */
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    background: linear-gradient(145deg, #A2DFF7, #A2DFF7);} /* Latar belakang bingkai gambar */
+    padding: 5px; /* Ruang ekstra di sekitar gambar */
+    /* Animasi saat hover */
+
+}
+.maps {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.map-container {
+
+    position: relative;
+    margin: 0 auto;
+    flex: 0 0 auto; /* Agar peta tidak melar dan tetap kecil */
+    height: 250px;
+        border: 5px solid #000; /* Bingkai gambar */
+ 
+max-width: 45%; /* Untuk memastikan peta tidak melampaui lebar container */
+    border-radius: 25px; /* Memberikan efek bingkai bulat pada peta */
+    overflow: hidden; /* Menjaga agar iframe tidak keluar dari bingkai bulat */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+flex: 0 0 auto; /* Agar peta tidak melar dan tetap kecil */
+    
+ 
+max-width: 100%; /* Untuk memastikan peta tidak melampaui lebar container */
+    border-radius: 15px; /* Memberikan efek bingkai bulat pada peta */
+    overflow: hidden; /* Menjaga agar iframe tidak keluar dari bingkai bulat */
+}
+.text-container {
+  font-family:'Roboto';
+}
+
+/* Sidebar Styles */
+.sidebar {
+   font-family:'bebas';
+   font-size:30px;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background : linear-gradient(145deg, #A2DFF7, #1da1f2); /* Latar belakang gradasi */
+    padding-top: 55px;
+    transition: 0.3s;
+    z-index: 1000;
+        border-radius: 20px; /* Bingkai melengkung */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 5px;
+    
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    padding-top: 5px; /* Add some space above the text */
+}
+
+    
+}
+
+.sidebar ul li a:hover {
+    border-radius: 10px; /* Menambahkan sudut sedikit bulat */
+    background-color: #000;
+}
+
+/* Button Styles */
+.open-btn {
+    font-family: 'bebas';
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    background-color: #A2DFF7;
+    color: black;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 10px; /* Menambahkan sudut sedikit bulat */
+    transition: left 0.3s ease; /* Animasi transisi */
+}
+
+
+/* Button Style */
+.btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+/* From Uiverse.io by boryanakrasteva */ 
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+.input {
+  border-style: none;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  outline: none;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  background-color: #7e4fd4;
+  box-shadow: 0px 0px 3px #f3f3f3;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.input::placeholder,
+.input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.input::placeholder {
+  color: #8f8f8f;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: .2s linear;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+  box-shadow: none;
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid #7e4fd4;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+

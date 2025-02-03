@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jus Buah Pisang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="pisang.png" alt="jus Buah Premium">
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="product-info">
+            <p class="category">Menu Jus Buah</p>
+            <h2 class="product-title">Jus Buah Pisang</h2>
+            <p class="price" id="price">Rp 15.000</p>
+            <p class="description">
+                Pisang Adalah Buah Yang Dikenal Luas Di Indonesia.Buah PIsang Bisa Di Nikmati Dengan Berbagai Cara Di Makan Langsung,Di Goreng,Di Kukus,Atau Di Olah Bersama Bahan Lain.Tapi Pisang Tidak Hanya Enak,Manfaatnya banyak.Membantu Atasi Hipertensi.Sumber Karbohidrat Dan Vitamin A,Pisang Perlancar Metabolisme,Meningkatkan Kekebalan Tubuh,Serta Untuk Merawat Kulit. 
+            </p>
+            <div class="size-selector">
+                <p>Pilih Ukuran:</p>
+                <div class="sizes">
+                    <button class="size-btn" data-price="10000">Kecil</button>
+                    <button class="size-btn active" data-price="15000">Sedang</button>
+                    <button class="size-btn" data-price="20000">Besar</button>
+                </div>
+            </div>
+            <div class="quantity-selector">
+        <p>Masukkan Jumlah:</p>
+        <input type="number" id="quantity" value="1" min="1">
+    </div>
+    <p>Total Harga: <span id="total-price">Rp 15.000</span></p>
+    <button class="add-to-cart">Pesan Sekarang</button>
+</div>
+
+        </div>
+    </div>
+    <script src="naga.js"></script>
+</body>
+</html>
